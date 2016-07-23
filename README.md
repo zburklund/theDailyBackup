@@ -5,7 +5,7 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
 
 ## CSS Layout
 
-**Document Structure for backup.css**
+**Document Structure for backup.css**  
 /* ===GLOBAL=== */
 
 /* ===LAYOUT=== */
