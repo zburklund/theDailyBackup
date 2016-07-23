@@ -3,21 +3,23 @@
 This is a back-up of The Daily's custom CSS & JS along with some helpful notes for future admin users of this website. This site has been constructed using wordpress and utilizes the [15Zine Theme](https://themeforest.net/item/15zine-hd-magazine-newspaper-wordpress-theme/10802918).
 
 
-## CSS Layout
-
-**Document Structure for backup.css**  
+## CSS Layout [backup.css]
 
 **GLOBAL**
+
     * PLACEHOLDER
 
 **LAYOUT**
+
     * Post Text
 
 **HEADER & LOGO**
+
     * Header
     * Logo Adjustments
 
 **NAVIGATION**
+
     * Main Navigation
     * Mega Menu
     * Top Menu
@@ -27,20 +29,24 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
     * Mobile Search Box
 
 **FOOTER**
+
     * General & Layout
     * Text Widget
     * Subscription Form
     * Social Media
 
 **CONTENT & MEDIA**
+
     * Print Styles
     * Media Sizing
 
 **GENERAL STYLES**
+
     * Header Text
     * Buttons
 
 **MISCELLANEOUS**
+
     * Input Text Color
     * Remove <PREV-NEXT> Buttons From Widgets
     
