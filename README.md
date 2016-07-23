@@ -6,23 +6,53 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
 ## CSS Layout
 
 **Document Structure for backup.css**  
+
 /* ===GLOBAL=== */
+    +
 
 /* ===LAYOUT=== */
-
-/* ===HEADER & NAVIGATION=== */
+    + Post Text
+    
+/* ===HEADER & LOGO=== */
+    + Header
+    + Logo Adjustments
+    
+/* ===NAVIGATION=== */
+    + Main Navigation
+    + Mega Menu
+    + Top Menu
+    + Sub Menu
+    + Mobile Navigation
+    + Main Search Box
+    + Mobile Search Box
+    
+/* ===FOOTER=== */
+    + General & Layout
+    + Text Widget
+    + Subscription Form
+    + Social Media
 
 /* ===CONTENT & MEDIA=== */
+    + Print Styles
+    + Media Sizing
 
-/* ===FOOTER=== */
+/* ===GENERAL STYLES=== */
+    + Header Text
+    + Buttons
 
 /* ===MISCELLANEOUS=== */
-
+    + Input Text Color
+    + Remove <PREV-NEXT> Buttons From Widgets
+    
 
 
 ## JS Layout
 
-**Document Structure for backup.js**
+**Document Structure for backup.js**  
+
+/* ===FUNCTION/VARIABLE NAME=== */
+// Short description of how the function/variable
+// works in the script
 
 
 ## Additional Documentation

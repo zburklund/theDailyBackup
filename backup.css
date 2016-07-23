@@ -1,0 +1,519 @@
+/*********************************************
+/*** Case Western Reserve University       ***
+/*** Custom + Override CSS for The Daily   ***
+/*** Authors: Jess Becker & Zach Burklund  ***
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* ============
+/* ===GLOBAL===
+/* ============ */
+
+
+/* ============
+/* ===LAYOUT===
+/* ============ */
+
+
+/* ---POST TEXT--- */
+
+.cb-module-block .cb-post-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px !important;
+    text-transform: none !important;
+}
+
+/* ===================
+/* ===HEADER & LOGO===
+/* =================== */
+
+
+/* ---HEADER--- */
+
+#cb-header,
+#cb-overlay {
+    background: #0a304e !important;
+}
+
+/* ---LOGO ADJUSTMENTS--- */
+
+#cb-logo-box {
+    position: relative;
+}
+#logo>a {
+    float: left;
+}
+#logo img {
+    height: 68px;
+    margin-top: 6px;
+}
+.cb-right-side {
+    display: none;
+}
+
+/* ================
+/* ===NAVIGATION===
+/* ================ */
+
+
+/* ---MAIN NAVIGATION BAR--- */
+
+#cb-nav-bar div,
+#cb-nav-bar ul,
+#cb-nav-bar li,
+#cb-nav-bar a {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+#cb-nav-bar>div>ul>li>a {
+    padding: 16px 20px !important;
+    border-right: 1px solid #fff;
+}
+#cb-nav-bar>div>ul>li:first-child>a {
+    border-left: 1px solid #fff;
+}
+#cb-nav-bar>div>ul>li:not(:first-child) {
+    margin-left: -7px;
+}
+#cb-nav-bar {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: normal;
+}
+#cb-nav-bar>div {
+    background: #e5e5e5 !important;
+    border-bottom: none !important;
+}
+#cb-nav-bar>div>ul {
+    border-bottom: none !important;
+}
+.cb-menu-light #cb-nav-bar .cb-main-nav > li > a {
+    color: #0a304e !important;
+}
+
+/* ---MEGA MENU--- */
+
+ul.cb-sub-bg,
+div.cb-mega-menu {
+    background: #fff !important;
+}
+ul.cb-sub-bg a,
+div.cb-mega-menu a {
+    color: #0a304e !important;
+    padding: 13px 12px;
+    font-size: 16px;
+}
+
+/* ---TOP MENU--- */
+
+#cb-top-menu .cb-right-side a span {
+    display: inline-block;
+}
+#cb-top-menu>div {
+    background: inherit !important;
+    height: inherit !important;
+    line-height: inherit !important;
+}
+#cb-top-menu,
+#cb-mob-close {
+    height: 58px;
+    line-height: 58px;
+    font-size: 14px;
+    background: #0a304e !important;
+    background-image: -webkit-radial-gradient(top, circle cover, #0a304e -50%, #061c2e 55%) !important;
+    background-image: -moz-radial-gradient(top, circle cover, #0a304e -50%, #061c2e 55%) !important;
+    background-image: -o-radial-gradient(top, circle cover, #0a304e -50%, #061c2e 55%) !important;
+    background-image: radial-gradient(top, circle cover, #0a304e -50%, #061c2e 55%) !important;
+}
+
+/* ---SUB MENU--- */
+
+ul.cb-sub-menu.cb-sub-bg {
+    box-shadow: 5px 5px rgba(0, 0, 0, .1);
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    width: 250px !important;
+}
+ul.cb-sub-menu.cb-sub-bg>li {
+    border-bottom: 1px solid #e5e5e5;
+}
+ul.cb-sub-menu.cb-sub-bg>li:hover {
+    background-color: #e5e5e5;
+    color: #0a304e;
+}
+
+/* ---MOBILE NAVIGATION DROPDOWN--- */
+
+#cb-mob-menu {
+    height: inherit;
+}
+#cb-mob-menu > div> ul {
+    padding: 0px !important;
+    max-height: 400px;
+    height: auto;
+}
+div.cb-mob,
+#cb-mob-open {
+    float: right !important;
+    text-align: right !important;
+    padding-right: 10px;
+    font-size: 21px;
+}
+#cb-mob-close {
+    height: 58px !important;
+    font-weight: 600;
+    font-size: 36px !important;
+    line-height: 42px !important;
+}
+#cb-mob-close i {
+    font: inherit;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li.menu-item-has-children {
+    font-size: 18px !important;
+    margin: 0;
+    font-weight: 600 !important;
+    padding: 0px;
+    border-bottom: 1px solid #999;
+    background-color: #e2e2e2;
+    text-align: left;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li>a {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li.menu-item-has-children>ul.sub-menu {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border-top: 1px solid #999;
+    background-color: #e2e2e2;
+    text-align: left;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li.menu-item-has-children>ul.sub-menu>li {
+    margin: 0px;
+    background-color: #fff;
+    text-align: left;
+    border-bottom: 1px solid #999;
+    font-size: 16px;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li.menu-item-has-children>ul.sub-menu>li:last-of-type {
+    border-bottom: none !important;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li.menu-item-has-children>ul.sub-menu>li>a {
+    padding: 8px 40px;
+    display: inline-block;
+    width: 100%;
+    color: #0a304e;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin: 0;
+    border-bottom: 1px solid #999;
+    text-align: left;
+    background-color: #e2e2e2;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li:first-child {
+    padding: 10px 20px;
+    border-bottom: 1px solid #999;
+    text-align: left;
+    background-color: #e2e2e2;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li>a {
+    color: #0a304e;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+#cb-mob-menu .cb-mob-menu-wrap ul li a {
+    text-transform: capitalize;
+    color: #0a304e;
+    text-decoration: none !important;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li>a:hover,
+#cb-mob-menu .cb-mob-menu-wrap>ul>li:focus {
+    background-color: #fff;
+}
+#cb-mob-menu .cb-mob-menu-wrap>ul>li>ul>li>a:hover,
+#cb-mob-menu .cb-mob-menu-wrap>ul>li>ul>li:focus {
+    background-color: #e2e2e2;
+}
+
+/* ---MAIN SEARCH BOX--- */
+
+#mainSearchBox {
+    float: right;
+    position: relative;
+    top: 25px;
+}
+#mainSearchBox>form>button {
+    background: none;
+    border: none;
+    right: 0px;
+    position: absolute;
+}
+#mainSearchBox>form>input {
+    width: 180px;
+    border-radius: 25px;
+    border: none;
+    padding: 5px 12px;
+    outline: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#mainSearchBox>form>input:focus {
+    width: 240px;
+}
+
+/* ---MOBILE SEARCH BOX--- */
+
+#mobSearchBox {
+    position: relative;
+    font-size: 16px;
+}
+#mobSearchBox>form>button {
+    background: none;
+    border: none;
+    right: 0px;
+    position: absolute;
+    padding-top: 5px;
+}
+#mobSearchBox>form>input {
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    padding: 6px 12px;
+    outline: none;
+    margin-bottom: 0px;
+}
+
+/* ============
+/* ===FOOTER===
+/* ============ */
+
+
+/* ---GENERAL & LAYOUT--- */
+
+#cb-footer a {
+    color: #4986CC !important;
+}
+#cb-footer h3 {
+    margin-bottom: 24px;
+}
+.cb-footer-light .cb-footer-widget-title {
+    border-bottom: 0 none;
+    color: #0a304e;
+}
+#cb-footer .cb-footer-x .cb-footer-widget {
+    margin: 0 12px;
+    padding-bottom: 22px;
+}
+#cb-footer #cb-widgets > div.cb-two {
+    float: right;
+}
+#cb-footer #cb-widgets > div.cb-one,
+#cb-footer #cb-widgets > div.cb-two {
+    width: 25%;
+}
+#cb-footer #cb-widgets > div.cb-three {
+    width: 50%;
+}
+
+/* ---TEXT WIDGET--- */
+
+#text-4 {
+    text-align: center;
+}
+#text-4>h3 {
+    margin-top: 16px;
+    margin-bottom: 12px !important;
+}
+#text-4 div.textwidget>div {
+    width: 50%;
+    float: left;
+}
+#cb-footer div.textwidget {
+    font-size: 14px !important;
+    margin-top: -6px;
+}
+
+/* ---SUBSCRIPTION FORM--- */
+
+#mc4wp-form-1>div>p:first-child {
+    margin-top: -6px;
+    width: 100%;
+}
+#mc4wp-form-1>div>p>input[name=EMAIL] {
+    padding: 12px 16px 11px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 95%;
+    font-size: 18px;
+}
+#mc4wp-form-1>div>p>input[name=EMAIL]:hover,
+#mc4wp-form-1>div>p>input[name=EMAIL]:active,
+#mc4wp-form-1>div>p>input[name=EMAIL]:focus {
+    border: 1px solid #0a304e;
+}
+#mc4wp-form-1>div>p {
+    display: table-cell;
+}
+
+/* ---SOCIAL MEDIA--- */
+
+div.socialframe {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+div.socialbuttonround {
+    width: 50px;
+    margin: auto;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #0a304e;
+}
+i.sociallogos {
+    line-height: 50px;
+}
+
+/* =====================
+/* ===CONTENT & MEDIA===
+/* ===================== */
+
+
+/* ---PRINT STYLES--- */
+
+@print {}
+
+/* ---MEDIA SIZING--- */
+
+@media (max-width:768px) {
+    #cb-s-trigger {
+        padding-right: 10px;
+    }
+    #mainSearchBox {
+        display: none;
+    }
+    .base-btn {
+        font-size: 16px;
+    }
+    div.socialbuttonround {
+        width: 40px;
+        margin: auto;
+        border-radius: 20px;
+        color: #fff;
+        background-color: #0a304e;
+    }
+    i.sociallogos {
+        line-height: 40px;
+    }
+}
+@media (min-width:768px) {
+    #logo {
+        text-align: left !important;
+    }
+}
+@media (max-width:1019px) {
+    #mainSearchBox {
+        position: absolute;
+        top: 42px;
+        right: 20px;
+    }
+    #cb-footer #cb-widgets > div.cb-one,
+    #cb-footer #cb-widgets > div.cb-two {
+        width: 50%;
+    }
+    #cb-footer #cb-widgets > div.cb-three {
+        width: 100%;
+    }
+}
+
+/* ====================
+/* ===GENERAL STYLES===
+/* ==================== */
+
+
+/* ---HEADER TEXT--- */
+
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    letter-spacing: 2px !important;
+}
+
+/* ---BUTTONS--- */
+
+.base-btn {
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.button-secondary {
+    border: 1px solid #0a304e;
+    color: #0a304e;
+    background-color: #fff;
+}
+.button-secondary:hover {
+    background-color: #0a304e;
+    color: #fff;
+}
+.button-primary {
+    background-color: #0a304e;
+    border: 1px solid #0a304e;
+    color: #fff;
+}
+.button-primary:hover {
+    background-color: #fff;
+    color: #0a304e;
+}
+.button-default {
+    border-width: 2px;
+    border-style: solid;
+}
+.button-default:hover {
+    background-color: rgba(0, 0, 0, .1);
+    border-color: rgba(0, 0, 0, .2);
+}
+
+/* ===================
+/* ===MISCELLANEOUS===
+/* =================== */
+
+
+/* ---INPUT TEXT COLOR--- */
+
+::-webkit-input-placeholder {
+    color: #0a304e !important;
+}
+::-moz-placeholder {
+    color: #0a304e !important;
+}
+:-moz-placeholder {
+    color: #0a304e !important;
+}
+:-ms-input-placeholder {
+    color: #0a304e !important;
+}
+
+/* ---REMOVE <Prev & Next> BUTTONS FROM MAIN FEATURE--- */
+
+#cb-section-a>div>div ul.flex-direction-nav {
+    display: none;
+}
