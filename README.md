@@ -13,7 +13,7 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
 
     * Post Text
 
-**HEADER & LOGO**
+**=== HEADER & LOGO ===**
 
     * Header
     * Logo Adjustments
