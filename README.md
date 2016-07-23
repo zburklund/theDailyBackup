@@ -7,20 +7,20 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
 
 **Document Structure for backup.css**  
 
-/* ===GLOBAL=== */
+**GLOBAL**
 
     * PLACEHOLDER
 
-/* ===LAYOUT=== */
+**LAYOUT**
 
     * Post Text
 
-/* ===HEADER & LOGO=== */
+**HEADER & LOGO**
 
     * Header
     * Logo Adjustments
 
-/* ===NAVIGATION=== */
+**NAVIGATION**
 
     * Main Navigation
     * Mega Menu
@@ -30,24 +30,24 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
     * Main Search Box
     * Mobile Search Box
 
-/* ===FOOTER=== */
+**FOOTER**
 
     * General & Layout
     * Text Widget
     * Subscription Form
     * Social Media
 
-/* ===CONTENT & MEDIA=== */
+**CONTENT & MEDIA**
 
     * Print Styles
     * Media Sizing
 
-/* ===GENERAL STYLES=== */
+**GENERAL STYLES**
 
     * Header Text
     * Buttons
 
-/* ===MISCELLANEOUS=== */
+**MISCELLANEOUS**
 
     * Input Text Color
     * Remove <PREV-NEXT> Buttons From Widgets
