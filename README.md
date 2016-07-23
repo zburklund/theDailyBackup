@@ -13,7 +13,7 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
 
     * Post Text
 
-**=== HEADER & LOGO ===**
+**HEADER & LOGO**
 
     * Header
     * Logo Adjustments
@@ -52,11 +52,9 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
     
 
 
-## JS Layout
+## JS Layout [backup.js]
 
-**Document Structure for backup.js**  
-
-/* ===FUNCTION/VARIABLE NAME=== */
+**FUNCTION NAME**
 // Short description of how the function/variable
 // works in the script
 
