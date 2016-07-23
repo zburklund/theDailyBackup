@@ -14,12 +14,12 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
 /* ===LAYOUT=== */
 
     * Post Text
-    
+
 /* ===HEADER & LOGO=== */
 
     * Header
     * Logo Adjustments
-    
+
 /* ===NAVIGATION=== */
 
     * Main Navigation
@@ -29,7 +29,7 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
     * Mobile Navigation
     * Main Search Box
     * Mobile Search Box
-    
+
 /* ===FOOTER=== */
 
     * General & Layout
