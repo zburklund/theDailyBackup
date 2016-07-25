@@ -61,6 +61,6 @@ This is a back-up of The Daily's custom CSS & JS along with some helpful notes f
 
 ## Additional Documentation
 
-The documentation for the 15Zine Theme can be found here - [15Zine Theme Docs](http://docs.cubellthemes.com/15zine/).
+The documentation for the 15Zine Theme - [15Zine Theme Docs](http://docs.cubellthemes.com/15zine/).
 
 Additional resources can be found here:

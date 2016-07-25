@@ -1,9 +1,3 @@
-/*********************************************
-/*** Case Western Reserve University       ***
-/*** Custom + Override JS for The Daily    ***
-/*** Author: Zach Burklund                 ***
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 <script>
 	// As soon as the page loads
     jQuery(document).ready(function() {
@@ -13,13 +7,14 @@
         var searchBarStyled = jQuery('#cb-logo-box').append("<div id='mainSearchBox'><form role='search' method='get' class='cb-search' action='http://ec2-54-208-2-90.compute-1.amazonaws.com/'><label for='headersearch' style='display:none;'>Search</label><input id='headersearch' type='text' class='cb-search-field cb-font-header' placeholder='Search..' value='' name='s' title='' autocomplete='off'><button aria-label='Submit Search' class='cb-search-submit' type='submit' value=''><i class='fa fa-search'></i></button></form></div>");
         var mobSearchBarStyled = jQuery('ul.cb-mobile-nav').prepend("<li><div id='mobSearchBox'><form role='search' method='get' class='cb-search' action='http://ec2-54-208-2-90.compute-1.amazonaws.com/'><label for='headersearch' style='display:none;'>Search</label><input id='headersearch' type='text' class='cb-search-field cb-font-header' placeholder='Search..' value='' name='s' title='' autocomplete='off'><button aria-label='Submit Search' class='cb-search-submit' type='submit' value=''><i class='fa fa-search'></i></button></form></div></li>");
         var mobSearchBarStyled = jQuery('#cb-nav-bar>div>ul>li.menu-item-has-children>a').append(" <i class='fa fa-angle-down' style='font-weight:600;'></i>");
+        // Add buttons to the footer
         var subscriptionButton = jQuery('#subscribe-submit>input:last').addClass("base-btn button-primary");
-        var exitMobileMenuButton = jQuery('#cb-mob-close>i').removeClass("cb-times").html('&times;');
+        var exitMobileMenuButton = jQuery('#cb-mob-close>i').addClass('fa-times');
+        // Add dropdown carets to the mobile menu
         var mobDropDownCaret = jQuery('#cb-mob-menu>div>ul>li.menu-item-has-children>a').append(" <i class='fa fa-angle-down' style='font-weight:600;'></i>");
+        // Ensure that each page has proper top spacing
         var topSpacer = jQuery('#cb-section-a').addClass("cb-fis-pad");
-
     });
-
     // Watch all of the clicks that happen in the document
     jQuery(document).on('click', function(event) {
 	    // If the menu is open and you click away from it

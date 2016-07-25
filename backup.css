@@ -121,8 +121,8 @@ div.cb-mega-menu a {
 }
 #cb-top-menu,
 #cb-mob-close {
-    height: 58px;
-    line-height: 58px;
+    height: 58px !important;
+    line-height: 58px !important;
     font-size: 14px;
     background: #0a304e !important;
     background-image: -webkit-radial-gradient(top, circle cover, #0a304e -50%, #061c2e 55%) !important;
@@ -168,7 +168,7 @@ div.cb-mob,
     height: 58px !important;
     font-weight: 600;
     font-size: 36px !important;
-    line-height: 42px !important;
+    line-height: 58px !important;
 }
 #cb-mob-close i {
     font: inherit;
