@@ -167,11 +167,8 @@ div.cb-mob,
 #cb-mob-close {
     height: 58px !important;
     font-weight: 600;
-    font-size: 36px !important;
+    font-size: 21px !important;
     line-height: 58px !important;
-}
-#cb-mob-close i {
-    font: inherit;
 }
 #cb-mob-menu .cb-mob-menu-wrap>ul>li.menu-item-has-children {
     font-size: 18px !important;
@@ -250,7 +247,7 @@ div.cb-mob,
 #mainSearchBox {
     float: right;
     position: relative;
-    top: 25px;
+    top: 20px;
 }
 #mainSearchBox>form>button {
     background: none;
@@ -426,7 +423,7 @@ i.sociallogos {
 @media (max-width:1019px) {
     #mainSearchBox {
         position: absolute;
-        top: 42px;
+        top: 36px;
         right: 20px;
     }
     #cb-footer #cb-widgets > div.cb-one,
@@ -450,6 +447,16 @@ h1 {
 }
 h2 {
     letter-spacing: 2px !important;
+}
+
+/* ---LINKS--- */
+
+a {
+    font-weight: 600;
+    color: #3168a6;
+}
+a:hover, a:focus {
+    color:#0a304e;
 }
 
 /* ---BUTTONS--- */
@@ -490,6 +497,9 @@ h2 {
 .button-default:hover {
     background-color: rgba(0, 0, 0, .1);
     border-color: rgba(0, 0, 0, .2);
+}
+.btn-block {
+    width: 100%;
 }
 
 /* ===================

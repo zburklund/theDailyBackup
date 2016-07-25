@@ -9,7 +9,7 @@
         var mobSearchBarStyled = jQuery('#cb-nav-bar>div>ul>li.menu-item-has-children>a').append(" <i class='fa fa-angle-down' style='font-weight:600;'></i>");
         // Add buttons to the footer
         var subscriptionButton = jQuery('#subscribe-submit>input:last').addClass("base-btn button-primary");
-        var exitMobileMenuButton = jQuery('#cb-mob-close>i').addClass('fa-times');
+        var exitMobileMenuButton = jQuery('#cb-mob-close>i').removeClass('cb-times').addClass('fa-times');
         // Add dropdown carets to the mobile menu
         var mobDropDownCaret = jQuery('#cb-mob-menu>div>ul>li.menu-item-has-children>a').append(" <i class='fa fa-angle-down' style='font-weight:600;'></i>");
         // Ensure that each page has proper top spacing
