@@ -23,6 +23,9 @@
     letter-spacing: 2px !important;
     text-transform: none !important;
 }
+#cb-section-a>div.cb-module-block {
+    margin-bottom: 0px;
+}
 
 /* ===================
 /* ===HEADER & LOGO===
@@ -455,8 +458,9 @@ a {
     font-weight: 600;
     color: #3168a6;
 }
-a:hover, a:focus {
-    color:#0a304e;
+a:hover,
+a:focus {
+    color: #0a304e;
 }
 
 /* ---BUTTONS--- */
