@@ -5,28 +5,6 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-/* ============
-/* ===GLOBAL===
-/* ============ */
-
-
-/* ============
-/* ===LAYOUT===
-/* ============ */
-
-
-/* ---POST TEXT--- */
-
-.cb-module-block .cb-post-title {
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 2px !important;
-    text-transform: none !important;
-}
-#cb-section-a>div.cb-module-block {
-    margin-bottom: 0px;
-}
-
 /* ===================
 /* ===HEADER & LOGO===
 /* =================== */
@@ -304,7 +282,10 @@ div.cb-mob,
 /* ---GENERAL & LAYOUT--- */
 
 #cb-footer a {
-    color: #4986CC !important;
+    color: #3168a6 !important;
+}
+#cb-footer a:hover {
+    text-decoration: underline;
 }
 #cb-footer h3 {
     margin-bottom: 24px;
@@ -381,6 +362,14 @@ div.socialbuttonround {
     border-radius: 25px;
     color: #fff;
     background-color: #0a304e;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+div.socialbuttonround:hover {
+    background-color: #3168a6;
 }
 i.sociallogos {
     line-height: 50px;
@@ -443,13 +432,59 @@ i.sociallogos {
 /* ==================== */
 
 
-/* ---HEADER TEXT--- */
+/* ---TEXT--- */
 
 h1 {
     font-size: 2.5em;
 }
 h2 {
     letter-spacing: 2px !important;
+}
+.cb-meta-style-4 .cb-article-meta h2 a {
+    text-transform: none;
+}
+.cb-module-block .cb-post-title {
+    font-weight: 700;
+    letter-spacing: 0px !important;
+    text-transform: none !important;
+}
+.cb-module-block .cb-post-title a {
+    color:#3168a6 !important;
+}
+.cb-module-block .cb-post-title a:hover {
+    color:#0a304e !important;
+    text-decoration: underline;
+}
+#cb-section-a>div.cb-module-block {
+    margin-bottom: 0px;
+}
+.cb-post-meta {
+    font-size: 10px;
+}
+.cb-post-meta>span:hover a,
+.cb-post-meta>span:hover>span {
+    background-color: #0a304e !important;
+    color: #fff !important;
+}
+
+/* ---PAGINATION--- */
+
+nav.cb-pagination>ul.page-numbers>li>span.current {
+    background: #0a304e;
+    border: 1px solid #0a304e;
+    font-size: 16px !important;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+nav.cb-pagination>ul.page-numbers>li>a {
+    border: 1px solid #0a304e;
+    font-size: 16px !important;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+nav.cb-pagination>ul.page-numbers>li>a:hover {
+    background: #0a304e;
+    color: #fff;
 }
 
 /* ---LINKS--- */
@@ -470,11 +505,11 @@ a:focus {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .button-secondary {
     border: 1px solid #0a304e;
@@ -491,8 +526,8 @@ a:focus {
     color: #fff;
 }
 .button-primary:hover {
-    background-color: #fff;
-    color: #0a304e;
+    background-color: #3168a6;
+    border-color: #3168a6;
 }
 .button-default {
     border-width: 2px;
