@@ -307,6 +307,14 @@ div.cb-mob,
 }
 #cb-footer #cb-widgets > div.cb-three {
     width: 50%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+#cb-footer #cb-widgets {
+    padding-top: 30px;
+}
+#text-3 {
+    margin: 0px 80px !important;
 }
 
 /* ---TEXT WIDGET--- */
@@ -374,6 +382,11 @@ div.socialbuttonround:hover {
 i.sociallogos {
     line-height: 50px;
 }
+#null-instagram-feed-3>h3 {
+    margin: 0px;
+    padding: 15px;
+    font-size: 30px;
+}
 
 /* =====================
 /* ===CONTENT & MEDIA===
@@ -438,10 +451,13 @@ h1 {
     font-size: 2.5em;
 }
 h2 {
-    letter-spacing: 2px !important;
+    letter-spacing: 1px !important;
 }
 .cb-meta-style-4 .cb-article-meta h2 a {
     text-transform: none;
+}
+.cb-article-meta h2 {
+    text-transform: none !important;
 }
 .cb-module-block .cb-post-title {
     font-weight: 700;
@@ -449,10 +465,10 @@ h2 {
     text-transform: none !important;
 }
 .cb-module-block .cb-post-title a {
-    color:#3168a6 !important;
+    color: #3168a6 !important;
 }
 .cb-module-block .cb-post-title a:hover {
-    color:#0a304e !important;
+    color: #0a304e !important;
     text-decoration: underline;
 }
 #cb-section-a>div.cb-module-block {

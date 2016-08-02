@@ -14,6 +14,10 @@
         var mobDropDownCaret = jQuery('#cb-mob-menu>div>ul>li.menu-item-has-children>a').append(" <i class='fa fa-angle-down' style='font-weight:600;'></i>");
         // Ensure that each page has proper top spacing
         var topSpacer = jQuery('#cb-section-a').addClass("cb-fis-pad");
+        // Hold onto the details of the social feed
+        var socialHolder = jQuery('#cb-footer div.cb-under-footer');
+        //flip the footer and instagram feed
+        var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
     });
     // Watch all of the clicks that happen in the document
     jQuery(document).on('click', function(event) {
