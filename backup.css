@@ -399,6 +399,12 @@ i.sociallogos {
 
 /* ---MEDIA SIZING--- */
 
+@media (max-width:480px) {
+    #cb-footer #cb-widgets > div.cb-one,
+    #cb-footer #cb-widgets > div.cb-two {
+        width: 100% !important;
+    }
+}
 @media (max-width:768px) {
     #cb-s-trigger {
         padding-right: 10px;
@@ -481,6 +487,12 @@ h2 {
 .cb-post-meta>span:hover>span {
     background-color: #0a304e !important;
     color: #fff !important;
+}
+div[id^="archives-"]>label {
+    display: none;
+}
+div[id^="archives-"]>select {
+    width: 100%;
 }
 
 /* ---PAGINATION--- */
