@@ -16,8 +16,19 @@
         var topSpacer = jQuery('#cb-section-a').addClass("cb-fis-pad");
         // Hold onto the details of the social feed
         var socialHolder = jQuery('#cb-footer div.cb-under-footer');
-        //flip the footer and instagram feed
+        // Flip the footer and instagram feed
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
+        // Search for areas to drop buttons in the main content
+        var hreftest = jQuery(location).attr('href').split('/');
+        if (hreftest[3] != '') {
+        	if (hreftest[4] == '') {
+	        	var mainContentButtons = jQuery('div.cb-main>div').each(function() {
+	        		var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
+		        	jQuery(this).append('<a href="#"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Stories</button></a>');
+		        });
+	        	console.log('the right segment: ', hreftest[3]);
+	        }
+        }
     });
     // Watch all of the clicks that happen in the document
     jQuery(document).on('click', function(event) {

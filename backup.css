@@ -568,6 +568,10 @@ a:focus {
 .btn-block {
     width: 100%;
 }
+.module-btn {
+    float: right;
+    margin-top: 20px;
+}
 
 /* ===================
 /* ===MISCELLANEOUS===
