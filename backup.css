@@ -576,6 +576,9 @@ a:focus {
 .sidebar-btn {
     float: right;
 }
+div[id^="text-"].cb-sidebar-widget.widget_text {
+    margin-top: -20px;
+}
 
 /* ===================
 /* ===MISCELLANEOUS===
