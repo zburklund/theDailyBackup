@@ -458,6 +458,7 @@ h1 {
 }
 h2 {
     letter-spacing: 1px !important;
+    font-size:2em;
 }
 .cb-meta-style-4 .cb-article-meta h2 a {
     text-transform: none;
