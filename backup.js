@@ -20,15 +20,12 @@
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
-        if (hreftest[3] != '') {
-        	if (hreftest[4] == '') {
-	        	var mainContentButtons = jQuery('div.cb-main>div').each(function() {
-	        		var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
-	        		var cleanlink = (((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase();
-		        	jQuery(this).append('<a href="' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
-		        });
-	        	console.log('the right segment: ', hreftest[3]);
-	        }
+        if (hreftest[3] != '' && hreftest[4] == '') {
+        	var mainContentButtons = jQuery('div.cb-main>div').each(function() {
+        		var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
+        		var cleanlink = (((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase();
+	        	jQuery(this).append('<a href="' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+	        });
         }
     });
     // Watch all of the clicks that happen in the document
