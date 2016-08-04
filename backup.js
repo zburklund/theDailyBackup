@@ -24,7 +24,8 @@
         	if (hreftest[4] == '') {
 	        	var mainContentButtons = jQuery('div.cb-main>div').each(function() {
 	        		var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
-		        	jQuery(this).append('<a href="#"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Stories</button></a>');
+	        		var cleanlink = (((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase();
+		        	jQuery(this).append('<a href="' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
 		        });
 	        	console.log('the right segment: ', hreftest[3]);
 	        }
