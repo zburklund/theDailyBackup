@@ -529,6 +529,8 @@ a:focus {
 
 /* ---BUTTONS--- */
 
+.caldera-grid input { font-weight: 600 !important; } /* overriding plugin styling */
+
 .base-btn {
     padding: 8px 16px;
     font-size: 18px;
