@@ -26,8 +26,10 @@
         // Flip the footer and instagram feed
         var calendarFlipper = jQuery('.cb-main div.cb-contents').prepend(calendarHolder);
 
-        var calendarFilterHolder = jQuery('.stec-top-menu-filter-calendar-dropdown');
+        var calendarActive = jQuery('.stec-top-menu-filter-calendar').addClass('active');
+        var calendarFilterHolder = jQuery('.stec-top-menu-filter-calendar-dropdown li');
         var calendarFilterMover = jQuery('#mla-text-widget-2').append(calendarFilterHolder);
+
 
 
         // Search for areas to drop buttons in the main content

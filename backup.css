@@ -623,6 +623,8 @@ p.form-submit>#submit:hover {
   margin-top: 40px;
 }
 
+.stec table {border: 1px solid rgba(0, 0, 0, 0.1);}
+
 .stec-top .stec-top-menu-date ul {
     margin: 0;
 }
