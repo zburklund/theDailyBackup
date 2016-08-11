@@ -20,11 +20,13 @@
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
 
 
-        // Hold onto the details of the social feed
-        var calendarHolder = jQuery('.stec');
+        // Hold onto the details of the calendar
+        var calendarHolder = jQuery('.stec').parent();
         console.log(calendarHolder);
-        // Flip the footer and instagram feed
+        // Change places for the calendar on the Calendar Page
         var calendarFlipper = jQuery('.cb-main div.cb-contents').prepend(calendarHolder);
+        // Change places for the calendar on the Events Page
+        var calendarFlipper = jQuery('#cb-section-a div.cb-contents').prepend(calendarHolder);
 
 
         // Search for areas to drop buttons in the main content
@@ -33,6 +35,7 @@
         	var mainContentButtons = jQuery('div.cb-main>div').each(function() {
         		var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
         		var cleanlink = (((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase();
+        		if (cleanlink == '')
 	        	jQuery(this).append('<a href="' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
 	        });
         }
