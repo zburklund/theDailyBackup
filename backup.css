@@ -607,3 +607,7 @@ a:focus {
 #cb-section-a>div>div ul.flex-direction-nav {
     display: none;
 }
+
+/* ---REMOVE MARGINS FROM CALEDAR MONTH UL--- */
+
+.stec-top .stec-top-menu-date ul {margin: 0;}
