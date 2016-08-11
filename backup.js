@@ -18,9 +18,18 @@
         var socialHolder = jQuery('#cb-footer div.cb-under-footer');
         // Flip the footer and instagram feed
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
+
+
+        // Hold onto the details of the social feed
+        var calendarHolder = jQuery('.stec');
+        console.log(calendarHolder);
+        // Flip the footer and instagram feed
+        var calendarFlipper = jQuery('.cb-main div.cb-contents').prepend(calendarHolder);
+
+
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
-        if (hreftest[3] != '' && hreftest[4] == '' && hreftest[3] != 'about') {
+        if ((hreftest[3] != '') && (hreftest[4] == '') && (hreftest[3] != 'events') && (hreftest[3] != 'about')) {
         	var mainContentButtons = jQuery('div.cb-main>div').each(function() {
         		var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
         		var cleanlink = (((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase();
