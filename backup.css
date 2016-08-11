@@ -619,6 +619,10 @@ p.form-submit>#submit:hover {
 
 /* ---CALENDAR FIXES--- */
 
+.stec {
+  margin-top: 40px;
+}
+
 .stec-top .stec-top-menu-date ul {
     margin: 0;
 }
