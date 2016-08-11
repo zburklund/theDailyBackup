@@ -20,7 +20,7 @@
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
-        if (hreftest[3] != '' && hreftest[4] == '') {
+        if (hreftest[3] != '' && hreftest[4] == '' && hreftest[3] != 'about') {
         	var mainContentButtons = jQuery('div.cb-main>div').each(function() {
         		var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
         		var cleanlink = (((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase();
