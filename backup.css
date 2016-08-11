@@ -625,8 +625,34 @@ p.form-submit>#submit:hover {
     display: none;
 }
 
-/* ---REMOVE MARGINS FROM CALEDAR MONTH UL--- */
+
+/* ---CALENDAR FIXES--- */
+
+.stec {
+  margin-top: 40px;
+}
 
 .stec-top .stec-top-menu-date ul {
     margin: 0;
+}
+
+.stec-top .stec-top-menu.stec-top-menu-layouts {
+    margin: 15px 0;
+}
+
+.stec-top-menu-date-dropdown {
+  box-shadow: 5px 5px rgba(0, 0, 0, .1);
+}
+
+.stec-top .stec-top-menu > li:first-child,
+.stec-top .stec-top-menu > li:last-child,
+.stec-top .stec-top-menu .stec-top-menu-count,
+.stec-top .stec-top-menu.stec-top-menu-date .stec-top-menu-date-week,
+.stec-top .stec-top-dropmenu-layouts > li,
+.stec-top .stec-top-menu-date-week .stec-top-menu-date-dropdown,
+.stec-top .stec-top-menu-date-day .stec-top-menu-date-dropdown,
+.stec-top .stec-top-menu-date-month .stec-top-menu-date-dropdown,
+.stec-top .stec-top-menu-date-year .stec-top-menu-date-dropdown {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
