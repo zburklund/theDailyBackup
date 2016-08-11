@@ -529,7 +529,11 @@ a:focus {
 
 /* ---BUTTONS--- */
 
-.caldera-grid input { font-weight: 600 !important; } /* overriding plugin styling */
+.caldera-grid input {
+    font-weight: 600 !important;
+}
+
+/* overriding plugin styling */
 
 .base-btn {
     padding: 8px 16px;
@@ -578,9 +582,14 @@ a:focus {
 .sidebar-btn {
     float: right;
 }
-/*div[id^="text-"].cb-sidebar-widget.widget_text {
-    margin-top: -20px;
-}*/
+p.form-submit>#submit {
+    border: 2px solid #0a304e !important;
+    color: #0a304e !important;
+}
+p.form-submit>#submit:hover {
+    background: #0a304e !important;
+    color: #fff !important;
+}
 
 /* ===================
 /* ===MISCELLANEOUS===
@@ -608,6 +617,11 @@ a:focus {
     display: none;
 }
 
-/* ---REMOVE MARGINS FROM CALEDAR MONTH UL--- */
+/* ---CALENDAR FIXES--- */
 
-.stec-top .stec-top-menu-date ul {margin: 0;}
+.stec-top .stec-top-menu-date ul {
+    margin: 0;
+}
+.stec-top .stec-top-menu.stec-top-menu-layouts {
+    margin: 15px 0;
+}
