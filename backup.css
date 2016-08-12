@@ -102,7 +102,7 @@ div.cb-mega-menu a {
     line-height: inherit !important;
 }
 #cb-top-menu,
-#cb-mob-close {
+.cb-mob-close-wrap {
     height: 58px !important;
     line-height: 58px !important;
     font-size: 14px;
@@ -142,10 +142,44 @@ ul.cb-sub-menu.cb-sub-bg>li>a:hover {
 #cb-mob-menu {
     height: inherit;
 }
+.cb-icon-plus {
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 52px;
+    color: #0a304e !important;
+    line-height: 52px !important;
+    text-align: center;
+    border-left: 1px solid #999;
+    background: #eeeeee;
+}
+.cb-icon-plus:hover {
+    color: #3168a6 !important;
+    background: #ffffff;
+    cursor: pointer;
+}
+.cb-icon-plus:after {
+    content: '\f104' !important;
+}
+.cb-selected {
+    background: #fff;
+}
+.cb-selected:hover {
+    background: #eeeeee;
+}
+.cb-selected:after {
+    content: '\f107' !important;
+}
 #cb-mob-menu > div> ul {
     padding: 0px !important;
-    max-height: 400px;
     height: auto;
+}
+#cb-mob-ul {
+    margin-bottom: 0px;
+    border-bottom: 2px solid #999;
+}
+.cb-mob-op #cb-container {
+    opacity: 0.25;
 }
 div.cb-mob,
 #cb-mob-open {
@@ -160,13 +194,16 @@ div.cb-mob,
     font-size: 21px !important;
     line-height: 58px !important;
 }
+#cb-mob-menu .cb-mob-menu-wrap {
+    padding-top: 42px;
+}
 #cb-mob-menu .cb-mob-menu-wrap>ul>li.menu-item-has-children {
     font-size: 18px !important;
     margin: 0;
     font-weight: 600 !important;
     padding: 0px;
     border-bottom: 1px solid #999;
-    background-color: #e2e2e2;
+    background-color: #eeeeee;
     text-align: left;
 }
 #cb-mob-menu .cb-mob-menu-wrap>ul>li>a {
@@ -180,7 +217,7 @@ div.cb-mob,
     margin-bottom: 0px;
     padding: 0px;
     border-top: 1px solid #999;
-    background-color: #e2e2e2;
+    background-color: #eeeeee;
     text-align: left;
 }
 #cb-mob-menu .cb-mob-menu-wrap>ul>li.menu-item-has-children>ul.sub-menu>li {
@@ -205,13 +242,13 @@ div.cb-mob,
     margin: 0;
     border-bottom: 1px solid #999;
     text-align: left;
-    background-color: #e2e2e2;
+    background-color: #eeeeee;
 }
 #cb-mob-menu .cb-mob-menu-wrap>ul>li:first-child {
     padding: 10px 20px;
     border-bottom: 1px solid #999;
     text-align: left;
-    background-color: #e2e2e2;
+    background-color: #eeeeee;
 }
 #cb-mob-menu .cb-mob-menu-wrap>ul>li>a {
     color: #0a304e;
@@ -222,6 +259,16 @@ div.cb-mob,
     text-transform: capitalize;
     color: #0a304e;
     text-decoration: none !important;
+    font-weight: 600;
+}
+#cb-mob-menu .cb-mob-menu-wrap ul.sub-menu li a {
+    font-weight: 400;
+}
+#cb-mob-menu .cb-mob-menu-wrap ul.sub-menu li a:hover {
+    color: #3168a6 !important;
+}
+#cb-mob-menu .cb-mob-menu-wrap ul.sub-menu li a:active {
+    background: #f5f5f5 !important;
 }
 #cb-mob-menu .cb-mob-menu-wrap>ul>li>a:hover,
 #cb-mob-menu .cb-mob-menu-wrap>ul>li:focus {
@@ -229,7 +276,7 @@ div.cb-mob,
 }
 #cb-mob-menu .cb-mob-menu-wrap>ul>li>ul>li>a:hover,
 #cb-mob-menu .cb-mob-menu-wrap>ul>li>ul>li:focus {
-    background-color: #e2e2e2;
+    background-color: #eeeeee;
 }
 
 /* ---MAIN SEARCH BOX--- */
@@ -272,7 +319,10 @@ div.cb-mob,
     border: none;
     right: 0px;
     position: absolute;
-    padding-top: 5px;
+    padding: 0px;
+    width: 42px;
+    line-height: 36px;
+    font-size: 20px;
 }
 #mobSearchBox>form>input {
     width: 100%;
@@ -281,6 +331,7 @@ div.cb-mob,
     padding: 6px 12px;
     outline: none;
     margin-bottom: 0px;
+    font-weight: 400;
 }
 
 /* ============
@@ -445,6 +496,10 @@ i.sociallogos {
     #text-3 {
         margin: 0px 40px !important;
     }
+    .cb-icon-plus {
+        height: 47px;
+        line-height: 47px !important;
+    }
 }
 @media (min-width:768px) {
     #logo {
@@ -469,6 +524,12 @@ i.sociallogos {
     }
     #cb-footer #cb-widgets > div.cb-three {
         width: 100%;
+    }
+    .cb-mob, .cb-mob-menu {
+        display: block !important;
+    }
+    #cb-nav-bar {
+        display: none !important;
     }
 }
 @media (min-width:1020px) {
@@ -503,7 +564,7 @@ h2 {
     text-transform: none !important;
 }
 .cb-module-block .cb-post-title {
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0px !important;
     text-transform: none !important;
 }
@@ -673,7 +734,7 @@ li[data-action] {
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
 }
 .stec-top-menu-filter-calendar-dropdown > li.active p {
-    color: #0a314e !important;
+    color: #0a304e !important;
 }
 .stec-top .stec-top-menu > li:first-child,
 .stec-top .stec-top-menu > li:last-child,
