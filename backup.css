@@ -739,9 +739,7 @@ li[data-action] {
 .stec-top-menu-date-dropdown {
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
 }
-.stec-top-menu-filter-calendar-dropdown > li.active p {
-    color: #0a304e !important;
-}
+
 .stec-top .stec-top-menu > li:first-child,
 .stec-top .stec-top-menu > li:last-child,
 .stec-top .stec-top-menu .stec-top-menu-count,
