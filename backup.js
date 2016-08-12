@@ -32,6 +32,10 @@
         	jQuery(this).css("display","none");
         });
 
+        //Change calendar icon to say Sort By Subject
+        var calendarFilterIconChanger = jQuery('i.fa-calendar').replaceWith("<p>Sort by Subject</p>");
+
+
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
         if (hreftest[3] != '') {
