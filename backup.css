@@ -511,6 +511,12 @@ i.sociallogos {
     #cb-logo-box {
         padding: 20px 30px 10px;
     }
+    .stec-top-menu-layouts {
+        display: block !important;
+    }
+    .stec-top-dropmenu-layouts {
+        display: none !important;
+    }
 }
 @media (max-width:1019px) {
     #mainSearchBox {
@@ -765,3 +771,7 @@ li[data-action] {
     overflow: hidden;
     margin: 0;
 }*/
+
+.stec-top>ul:first-of-type>li:first-child {
+    display: none;
+}

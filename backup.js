@@ -21,7 +21,6 @@
         // Flip the footer and instagram feed
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
 
-
         // Hold onto the details of the calendar
         var calendarHolder = jQuery('.stec').parent();
         // Change places for the calendar on the Calendar Page
@@ -29,6 +28,9 @@
         // Change places for the calendar on the Events Page
         var calendarFlipper = jQuery('#cb-section-a div.cb-contents').prepend(calendarHolder);
 
+        var calendarViewFlipper = jQuery('ul.stec-top-menu-layouts li:gt(1)').each(function() {
+        	jQuery(this).css("display","none");
+        });
 
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
@@ -82,32 +84,4 @@
 	        jQuery('body').removeClass('cb-mob-op');
 	    }
 	});
-
-//Solution in progress for the mobile menu (Currently everything is
-//displayed on the flyout)
-/*
-	var i=0;
-	var hideMobileMenu = jQuery("#cb-mob-menu").find(">div.cb-mob-menu-wrap li.menu-item-has-children").each(function() {
-	    jQuery(this).attr('data-id', i);
-	    jQuery(this).find('>ul').hide();
-	    i++;
-	});
-	i='';
-	hideMobileMenu.click(function() {
-	    clearit='';
-	    if(jQuery(this).attr('data-id') != i) {
-	        jQuery(this).find('>ul').show();
-	        if(i != '') {
-	            jQuery(this).find('>ul').hide();
-	        }
-	        i = jQuery(this).attr('data-id');
-	    }
-	});
-	jQuery(document).on('click', function(event) {
-	  if (!jQuery(event.target).closest('#cb-mob-menu>div>ul>li>ul>li, #cb-mob-menu>div>ul>li>').length) {
-	    // Hide the menus.
-	    jQuery(hideMobileMenu).hide();
-	  }
-	});
-*/
 </script>
