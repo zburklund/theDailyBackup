@@ -21,7 +21,6 @@
         // Flip the footer and instagram feed
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
 
-
         // Hold onto the details of the calendar
         var calendarHolder = jQuery('.stec').parent();
         // Change places for the calendar on the Calendar Page

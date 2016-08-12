@@ -1,4 +1,4 @@
-    /*********************************************
+/*********************************************
 /*** Case Western Reserve University       ***
 /*** Custom + Override CSS for The Daily   ***
 /*** Authors: Jess Becker & Zach Burklund  ***
@@ -531,8 +531,7 @@ i.sociallogos {
     #cb-footer #cb-widgets > div.cb-three {
         width: 100%;
     }
-    .cb-mob,
-    .cb-mob-menu {
+    .cb-mob, .cb-mob-menu {
         display: block !important;
     }
     #cb-nav-bar {
@@ -696,14 +695,6 @@ p.form-submit>#submit:hover {
     background: #0a304e !important;
     color: #fff !important;
 }
-p.form-submit>#submit {
-    border: 2px solid #0a304e !important;
-    color: #0a304e !important;
-}
-p.form-submit>#submit:hover {
-    background: #0a304e !important;
-    color: #fff !important;
-}
 
 /* ===================
 /* ===MISCELLANEOUS===
@@ -747,6 +738,11 @@ li[data-action] {
 .stec-top .stec-top-menu.stec-top-menu-layouts {
     margin: 15px 0;
 }
+
+.cb-entry-content table tr td {
+    padding: 0;
+}
+
 .stec-top-menu-date-dropdown {
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
 }
@@ -783,5 +779,7 @@ li[data-action] {
 .stec-top .stec-top-menu-filter-calendar.active .stec-top-menu-filter-calendar-dropdown {
     border: 1px solid #eeeeee;
 }
+
 .stec-top>ul:first-of-type>li:first-child {
     display: none;
+}
