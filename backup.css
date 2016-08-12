@@ -746,9 +746,7 @@ li[data-action] {
 .stec-top-menu-date-dropdown {
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
 }
-.stec-top-menu-filter-calendar-dropdown > li.active p {
-    color: #0a314e !important;
-}
+
 .stec-top .stec-top-menu > li:first-child,
 .stec-top .stec-top-menu > li:last-child,
 .stec-top .stec-top-menu .stec-top-menu-count,
@@ -761,20 +759,6 @@ li[data-action] {
 .stec-layout-month-daylabel td:first-child,
 .stec-layout-month-daylabel td:last-child {
     border-radius: 0px;
-}
-.stec-top .stec-top-menu-filter-calendar .stec-top-menu-filter-calendar-dropdown {
-    visibility: visible;
-    opacity: 100;
-    position: static;
-    top: 0;
-    left: 0;
-    width: 370px;
-    border-radius: 0;
-    overflow: hidden;
-    margin: 0;
-}
-.cb-entry-content table tr td {
-    padding: 0;
 }
 .stec-top .stec-top-menu-filter-calendar.active .stec-top-menu-filter-calendar-dropdown {
     border: 1px solid #eeeeee;
