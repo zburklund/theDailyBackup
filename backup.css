@@ -730,12 +730,19 @@ li[data-action] {
 .stec table {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.stec-top .stec-top-menu-date ul {
+.stec-top .stec-top-menu-date ul,
+.cb-entry-content ul li ul,
+.cb-entry-content ul {
     margin: 0;
 }
 .stec-top .stec-top-menu.stec-top-menu-layouts {
     margin: 15px 0;
 }
+
+.cb-entry-content table tr td {
+    padding: 0;
+}
+
 .stec-top-menu-date-dropdown {
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
 }
@@ -756,19 +763,6 @@ li[data-action] {
 .stec-top .stec-top-menu-filter-calendar.active .stec-top-menu-filter-calendar-dropdown {
     border: 1px solid #eeeeee;
 }
-
-/*
-.stec-top .stec-top-menu-filter-calendar .stec-top-menu-filter-calendar-dropdown {
-    visibility: visible;
-    opacity: 100;
-    position: static;
-    top: 0;
-    left: 0;
-    width: 370px;
-    border-radius: 0;
-    overflow: hidden;
-    margin: 0;
-}*/
 
 .stec-top>ul:first-of-type>li:first-child {
     display: none;
