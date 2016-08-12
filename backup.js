@@ -7,11 +7,13 @@
         var searchBarStyled = jQuery('#cb-logo-box').append("<div id='mainSearchBox'><form role='search' method='get' class='cb-search' action='http://umc-devtest-cmsvpc-lb01-1519385574.us-east-1.elb.amazonaws.com/'><label for='headersearch' style='display:none;'>Search</label><input id='headersearch' type='text' class='cb-search-field cb-font-header' placeholder='Search..' value='' name='s' title='' autocomplete='off'><button aria-label='Submit Search' class='cb-search-submit' type='submit' value=''><i class='fa fa-search'></i></button></form></div>");
         var mobSearchBarStyled = jQuery('ul.cb-mobile-nav').prepend("<li><div id='mobSearchBox'><form role='search' method='get' class='cb-search' action='http://umc-devtest-cmsvpc-lb01-1519385574.us-east-1.elb.amazonaws.com/'><label for='headersearch' style='display:none;'>Search</label><input id='headersearch' type='text' class='cb-search-field cb-font-header' placeholder='Search..' value='' name='s' title='' autocomplete='off'><button aria-label='Submit Search' class='cb-search-submit' type='submit' value=''><i class='fa fa-search'></i></button></form></div></li>");
         var mobSearchBarStyled = jQuery('#cb-nav-bar>div>ul>li.menu-item-has-children>a').append(" <i class='fa fa-angle-down' style='font-weight:600;'></i>");
+        // Mobile menu buttons
+        var mobdropdownbuttons = jQuery('span.cb-icon-plus').each(function() {
+        	jQuery(this).addClass('fa');
+        });
         // Add buttons to the footer
         var subscriptionButton = jQuery('#subscribe-submit>input:last').addClass("base-btn button-primary");
         var exitMobileMenuButton = jQuery('#cb-mob-close>i').removeClass('cb-times').addClass('fa-times');
-        // Add dropdown carets to the mobile menu
-        var mobDropDownCaret = jQuery('#cb-mob-menu>div>ul>li.menu-item-has-children>a').append(" <i class='fa fa-angle-down' style='font-weight:600;'></i>");
         // Ensure that each page has proper top spacing
         var topSpacer = jQuery('#cb-section-a').addClass("cb-fis-pad");
         // Hold onto the details of the social feed
@@ -20,27 +22,64 @@
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
 
 
-        // Hold onto the details of the social feed
-        var calendarHolder = jQuery('.stec');
-        console.log(calendarHolder);
-        // Flip the footer and instagram feed
+        // Hold onto the details of the calendar
+        var calendarHolder = jQuery('.stec').parent();
+        // Change places for the calendar on the Calendar Page
         var calendarFlipper = jQuery('.cb-main div.cb-contents').prepend(calendarHolder);
+        // Change places for the calendar on the Events Page
+        var calendarFlipper = jQuery('#cb-section-a div.cb-contents').prepend(calendarHolder);
 
-        var calendarActive = jQuery('.stec-top-menu-filter-calendar').addClass('active');
-        var calendarFilterHolder = jQuery('.stec-top-menu-filter-calendar-dropdown li');
-        var calendarFilterMover = jQuery('#mla-text-widget-2').append(calendarFilterHolder);
+        var calendarViewFlipper = jQuery('ul.stec-top-menu-layouts li:gt(1)').each(function() {
+        	jQuery(this).css("display","none");
+        });
 
+var calendarFilterIconChanger = jQuery('i.fa-calendar').replaceWith("<p>Filter by Subject</p>");
 
+var calendarMonthOrderChanger = jQuery('.stec-top-menu-layouts li:first-child').insertAfter('.stec-top-menu-layouts li:nth-child(2)');
 
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
-        if ((hreftest[3] != '') && (hreftest[4] == '') && (hreftest[3] != 'events') && (hreftest[3] != 'about')) {
+        if (hreftest[3] != '') {
+        	var logoAdjuster = jQuery('#logo>a').wrap('<h1></h1>');
+        };
+        if ((hreftest[3] != '') && (hreftest[4] == '') && ((hreftest[3] != 'events') && (hreftest[3] != 'about') && (hreftest[3] != 'community-postings'))) {
         	var mainContentButtons = jQuery('div.cb-main>div').each(function() {
         		var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
-        		var cleanlink = (((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase();
-	        	jQuery(this).append('<a href="' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+        		var cleanlink = ((((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase());
+        		switch (cleanlink) {
+        			case 'athletics':
+        				jQuery(this).append('<a href="/tag/' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+        				break;
+        			case 'featured':
+        				jQuery(this).append('<a href="/category/' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+        				break;
+        			case 'media-mentions':
+        				jQuery(this).append('<a href="/category/media"><button class="base-btn button-primary module-btn">See all ' + hrefholder + '</button></a>');
+        				break;
+        			case 'people':
+        				jQuery(this).append('<a href="/category/5questions"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+        				break;
+        			case 'in-memory':
+        				jQuery(this).append('<a href="/tag/obituary"><button class="base-btn button-primary module-btn">See all Articles Written in Memory</button></a>');
+        				break;
+        			case 'campus-updates':
+        				jQuery(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + '</button></a>');
+        				break;
+        			case 'awards':
+        				jQuery(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all Award Recognitions</button></a>');
+        				break;
+        			case 'publications-presentations':
+        				jQuery(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + '</button></a>');
+        				break;
+        			case 'appointments':
+        				jQuery(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + '</button></a>');
+        				break;
+        			default:
+        				jQuery(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+        				break;
+        		};
 	        });
-        }
+        };
     });
     // Watch all of the clicks that happen in the document
     jQuery(document).on('click', function(event) {
@@ -50,32 +89,4 @@
 	        jQuery('body').removeClass('cb-mob-op');
 	    }
 	});
-
-//Solution in progress for the mobile menu (Currently everything is
-//displayed on the flyout)
-/*
-	var i=0;
-	var hideMobileMenu = jQuery("#cb-mob-menu").find(">div.cb-mob-menu-wrap li.menu-item-has-children").each(function() {
-	    jQuery(this).attr('data-id', i);
-	    jQuery(this).find('>ul').hide();
-	    i++;
-	});
-	i='';
-	hideMobileMenu.click(function() {
-	    clearit='';
-	    if(jQuery(this).attr('data-id') != i) {
-	        jQuery(this).find('>ul').show();
-	        if(i != '') {
-	            jQuery(this).find('>ul').hide();
-	        }
-	        i = jQuery(this).attr('data-id');
-	    }
-	});
-	jQuery(document).on('click', function(event) {
-	  if (!jQuery(event.target).closest('#cb-mob-menu>div>ul>li>ul>li, #cb-mob-menu>div>ul>li>').length) {
-	    // Hide the menus.
-	    jQuery(hideMobileMenu).hide();
-	  }
-	});
-*/
 </script>
