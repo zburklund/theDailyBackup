@@ -531,7 +531,8 @@ i.sociallogos {
     #cb-footer #cb-widgets > div.cb-three {
         width: 100%;
     }
-    .cb-mob, .cb-mob-menu {
+    .cb-mob,
+    .cb-mob-menu {
         display: block !important;
     }
     #cb-nav-bar {
@@ -738,15 +739,12 @@ li[data-action] {
 .stec-top .stec-top-menu.stec-top-menu-layouts {
     margin: 15px 0;
 }
-
 .cb-entry-content table tr td {
     padding: 0;
 }
-
 .stec-top-menu-date-dropdown {
     box-shadow: 5px 5px rgba(0, 0, 0, .1);
 }
-
 .stec-top .stec-top-menu > li:first-child,
 .stec-top .stec-top-menu > li:last-child,
 .stec-top .stec-top-menu .stec-top-menu-count,
@@ -763,7 +761,10 @@ li[data-action] {
 .stec-top .stec-top-menu-filter-calendar.active .stec-top-menu-filter-calendar-dropdown {
     border: 1px solid #eeeeee;
 }
-
 .stec-top>ul:first-of-type>li:first-child {
     display: none;
+}
+#af-wrapper {
+    font-family: Titillium Web;
+    font-size: 16px;
 }
