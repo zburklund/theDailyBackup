@@ -28,13 +28,14 @@
         // Change places for the calendar on the Events Page
         var calendarFlipper = jQuery('#cb-section-a div.cb-contents').prepend(calendarHolder);
 
-        var calendarViewFlipper = jQuery('ul.stec-top-menu-layouts li:gt(1)').each(function() {
-            jQuery(this).css("display","none");
+        var calendarViewFlipper = jQuery("li[data-view='day'], li[data-view='week']").each(function() {
+            jQuery(this).css("display", "none");
         });
 
-var calendarFilterIconChanger = jQuery('i.fa-calendar').replaceWith("<p>Filter by Subject</p>");
+        var calendarFilterIconChanger = jQuery('i.fa-calendar').replaceWith("<p>Filter by Subject</p>");
 
-var calendarMonthOrderChanger = jQuery('.stec-top-menu-layouts li:first-child').insertAfter('.stec-top-menu-layouts li:nth-child(2)');
+        var calendarMonthOrderChanger = jQuery('.stec-top-menu-layouts li:first-child').insertAfter('.stec-top-menu-layouts li:nth-child(2)');
+
 
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
