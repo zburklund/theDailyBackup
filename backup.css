@@ -400,6 +400,10 @@ div.cb-mob,
     margin-top: -6px;
 }
 
+.textwidget p {
+    margin-top: 0;
+}
+
 /* ---SUBSCRIPTION FORM--- */
 
 #mc4wp-form-1>div>p:first-child {
