@@ -37,6 +37,11 @@
         var calendarMonthOrderChanger = jQuery('.stec-top-menu-layouts li:first-child').insertAfter('.stec-top-menu-layouts li:nth-child(2)');
 
 
+        // Remove all placeholder images
+        var placeholderRemover = jQuery("div.cb-img-fw:has(img[alt*='placeholder'])").each(function() {
+            jQuery(this).css("display", "none");
+        })
+
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
         if (hreftest[3] != '') {
