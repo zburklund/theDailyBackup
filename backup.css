@@ -643,7 +643,7 @@ a:focus {
 
 /* overriding plugin styling */
 
-.base-btn {
+.base-btn, .bbp-submit-wrapper button {
     padding: 8px 16px;
     font-size: 18px;
     font-weight: 600;
@@ -653,6 +653,8 @@ a:focus {
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    letter-spacing: 0px;
+    text-transform: none;
 }
 .button-secondary {
     border: 1px solid #0a304e;
@@ -663,12 +665,12 @@ a:focus {
     background-color: #0a304e;
     color: #fff;
 }
-.button-primary {
+.button-primary, .bbp-submit-wrapper button {
     background-color: #0a304e;
     border: 1px solid #0a304e;
     color: #fff;
 }
-.button-primary:hover {
+.button-primary:hover, .bbp-submit-wrapper button:hover {
     background-color: #3168a6;
     border-color: #3168a6;
 }
