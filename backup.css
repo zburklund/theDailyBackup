@@ -735,6 +735,11 @@ li[data-action] {
 .stec table {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.stec-layout-month-daycell-events .stec-layout-month-daycell-event .stec-layout-month-daycell-event-name {
+    font-weight: 600 !important;
+}
+
 .stec-top .stec-top-menu-date ul,
 .cb-entry-content ul li ul,
 .cb-entry-content ul {
@@ -791,4 +796,12 @@ div.stec-top>ul:first-of-type li:nth-child(3) {
 }
 div.stec-top>ul:first-of-type li:nth-child(2) {
     display: none;
+}
+
+.stec-layout-event-inner-intro-media {
+  width: 360px !important;
+}
+
+.stec-layout-event-inner-intro .stec-layout-event-inner-intro-external-link {
+    color: #ffffff;
 }
