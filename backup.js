@@ -86,8 +86,9 @@
             });
         };
         if ((hreftest[3] == 'forum') || (hreftest[3] == 'topic')) {
-            var forumAdjuster = '';
-            console.log('hello');
+            var forumAdjuster = jQuery('#cb-content');
+            forumAdjuster.find('>div').css("float","left");
+            forumAdjuster.find('>aside').css("margin-left","30px");
         };
     });
     // Watch all of the clicks that happen in the document

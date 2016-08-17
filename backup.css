@@ -796,7 +796,7 @@ li[data-action] {
 div.stec-top>ul:first-of-type li:nth-child(3) {
     margin-right: 6px;
 }
-div.stec-top>ul:first-of-type li:nth-child(2) {
+div.stec-top>(ul:first-of-type):not(.stec-top-menu-filter-calendar-dropdown) li:nth-child(2) {
     display: none;
 }
 
