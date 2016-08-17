@@ -85,6 +85,10 @@
                 };
             });
         };
+        if ((hreftest[3] == 'forum') || (hreftest[3] == 'topic')) {
+            var forumAdjuster = '';
+            console.log('hello');
+        };
     });
     // Watch all of the clicks that happen in the document
     jQuery(document).on('click', function(event) {
