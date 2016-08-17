@@ -799,7 +799,9 @@ div.stec-top>ul:first-of-type li:nth-child(3) {
 div.stec-top>(ul:first-of-type):not(.stec-top-menu-filter-calendar-dropdown) li:nth-child(2) {
     display: none;
 }
-
+div.stec-top>ul:first-of-type li.stec-top-menu-search {
+    display: none;
+}
 .stec-layout-event-inner-intro-media {
   width: 360px !important;
 }
