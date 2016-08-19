@@ -690,6 +690,11 @@ a:focus {
     margin-top: 25px;
     padding: 4px 12px;
 }
+.home-module-btn {
+    float: right;
+    margin-top: -25px;
+    padding: 4px 12px;
+}
 .sidebar-btn {
     float: right;
     padding: 4px 14px;
