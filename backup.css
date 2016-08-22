@@ -735,10 +735,13 @@ p.form-submit>#submit:hover {
 #cb-section-a>div>div ul.flex-direction-nav {
     display: none;
 }
-.cb-entry-content span.cb-itemprop ul,
-.cb-entry-content span.cb-itemprop ol {
+.cb-entry-content span.cb-itemprop ul {
     margin-left: 45px !important;
     list-style-type: disc !important;
+}
+.cb-entry-content span.cb-itemprop ol {
+    margin-left: 45px !important;
+    list-style-type: decimal !important;
 }
 
 /* ---CALENDAR FIXES--- */
