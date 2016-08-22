@@ -816,3 +816,9 @@ div.stec-top>ul:first-of-type li.stec-top-menu-search {
 .stec-layout-event-inner-intro .stec-layout-event-inner-intro-external-link {
     color: #ffffff;
 }
+
+/* SIDEBAR LINKS */
+
+.cb-body-light .cb-sidebar-widget a {
+    color: #3168a6;
+}
