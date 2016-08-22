@@ -737,6 +737,7 @@ p.form-submit>#submit:hover {
 }
 .cb-entry-content ul {
     margin-left: 45px !important;
+    list-style-type: disc !important;
 }
 
 /* ---CALENDAR FIXES--- */
