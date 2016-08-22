@@ -399,7 +399,6 @@ div.cb-mob,
     font-size: 14px !important;
     margin-top: -6px;
 }
-
 .textwidget p {
     margin-top: 0;
 }
@@ -643,7 +642,8 @@ a:focus {
 
 /* overriding plugin styling */
 
-.base-btn, .bbp-submit-wrapper button {
+.base-btn,
+.bbp-submit-wrapper button {
     padding: 8px 16px;
     font-size: 18px;
     font-weight: 600;
@@ -665,12 +665,14 @@ a:focus {
     background-color: #0a304e;
     color: #fff;
 }
-.button-primary, .bbp-submit-wrapper button {
+.button-primary,
+.bbp-submit-wrapper button {
     background-color: #0a304e;
     border: 1px solid #0a304e;
     color: #fff;
 }
-.button-primary:hover, .bbp-submit-wrapper button:hover {
+.button-primary:hover,
+.bbp-submit-wrapper button:hover {
     background-color: #3168a6;
     border-color: #3168a6;
 }
@@ -733,6 +735,9 @@ p.form-submit>#submit:hover {
 #cb-section-a>div>div ul.flex-direction-nav {
     display: none;
 }
+.cb-entry-content ul {
+    margin-left: 45px !important;
+}
 
 /* ---CALENDAR FIXES--- */
 
@@ -742,11 +747,9 @@ li[data-action] {
 .stec table {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .stec-layout-month-daycell-events .stec-layout-month-daycell-event .stec-layout-month-daycell-event-name {
     font-weight: 600 !important;
 }
-
 .stec-top .stec-top-menu-date ul,
 .cb-entry-content ul li ul,
 .cb-entry-content ul {
@@ -808,9 +811,8 @@ div.stec-top>ul:first-of-type li.stec-top-menu-search {
     display: none;
 }
 .stec-layout-event-inner-intro-media {
-  width: 360px !important;
+    width: 360px !important;
 }
-
 .stec-layout-event-inner-intro .stec-layout-event-inner-intro-external-link {
     color: #ffffff;
 }
