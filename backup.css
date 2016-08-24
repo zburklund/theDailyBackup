@@ -567,6 +567,15 @@ h2 {
     letter-spacing: 1px !important;
     font-size: 2em;
 }
+
+.cb-fis h1 {
+    color: #161616;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0px !important;
+    text-transform: none !important;
+}
+
 .cb-meta-style-4 .cb-article-meta h2 a {
     text-transform: none;
 }
