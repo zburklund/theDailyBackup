@@ -90,6 +90,14 @@
             var fixTheSidebar = jQuery('aside.cb-sidebar').empty();
             fixTheSidebar.append('<div id="text-32" class="cb-sidebar-widget widget_text"><h3 class="cb-sidebar-widget-title cb-widget-title">Quick Links</h3><div class="textwidget"><div><a href="/community-postings-form"><button class="base-btn button-primary btn-block" type="button">Submit a Posting</button></a></div></div></div>');
         };
+        if ((hreftest[3] == 'a-glimpse-of-cleveland-first-year-students-explore-their-new-home-before-orientation')) {
+            var fixTheTitle = jQuery('#cb-featured-image>div.cb-entry-header.cb-meta');
+            var placeTheTitle = jQuery('div.cb-post-wrap div.cb-main').prepend(fixTheTitle);
+            var fixTheCaption = jQuery('span.cb-caption').css({
+                width: '100%',
+                text-align: 'center'
+            });
+        };
     });
     // Watch all of the clicks that happen in the document
     jQuery(document).on('click', function(event) {
