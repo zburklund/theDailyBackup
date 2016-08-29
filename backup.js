@@ -93,10 +93,7 @@
         if ((hreftest[3] == 'a-glimpse-of-cleveland-first-year-students-explore-their-new-home-before-orientation')) {
             var fixTheTitle = jQuery('#cb-featured-image>div.cb-entry-header.cb-meta');
             var placeTheTitle = jQuery('div.cb-post-wrap div.cb-main').prepend(fixTheTitle);
-            var fixTheCaption = jQuery('span.cb-caption').css({
-                width: '100%',
-                text-align: 'center'
-            });
+            var fixTheCaption = jQuery('span.cb-caption').css({"width": "100%", "max-width": "100%", "text-align": "center"});
         };
     });
     // Watch all of the clicks that happen in the document
