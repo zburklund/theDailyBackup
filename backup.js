@@ -85,7 +85,7 @@
                 };
             });
         };
-        if ((hreftest[3] == 'community-postings')) {
+        if ((hreftest[3] == 'category') && (hreftest[4] == 'community-postings')) {
             var fixTheHeader = jQuery('.cb-main').css('margin-top', '0px');
             var fixTheSidebar = jQuery('aside.cb-sidebar').empty();
             fixTheSidebar.append('<div id="text-32" class="cb-sidebar-widget widget_text"><h3 class="cb-sidebar-widget-title cb-widget-title">Quick Links</h3><div class="textwidget"><div><a href="/community-postings-form"><button class="base-btn button-primary btn-block" type="button">Submit a Posting</button></a></div></div></div>');
