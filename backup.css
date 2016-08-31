@@ -503,6 +503,10 @@ i.sociallogos {
         height: 47px;
         line-height: 47px !important;
     }
+    div.stec-top>ul:first-of-type li:nth-child(3) {
+        margin-right: 6px;
+        display: flex;
+    }
 }
 @media (min-width:768px) {
     #logo {
@@ -521,8 +525,12 @@ i.sociallogos {
         display: none !important;
     }
     div.stec-top>ul:first-of-type li:nth-child(3) {
+        /*
+        UNCOMMENT THESE WHEN FINISHED SO DISPLAY IS NOT MESSED UP
         margin-right: 0px;
-        display: none;
+        display: none;*/
+        margin-right: 6px;
+        display: flex;
     }
 }
 @media (max-width:1019px) {
@@ -818,10 +826,6 @@ li[data-action] {
 }
 .stec-top-dropmenu-layouts ul li:hover {
     background: #3168a6 !important;
-}
-div.stec-top>ul:first-of-type li:nth-child(3) {
-    margin-right: 6px;
-    display: block;
 }
 div.stec-top>(ul:first-of-type):not(.stec-top-menu-filter-calendar-dropdown) li:nth-child(2) {
     display: none;
