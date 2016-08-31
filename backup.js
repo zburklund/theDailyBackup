@@ -94,11 +94,12 @@
             var calendarFilterIconChanger = jQuery('i.fa-calendar').replaceWith("<p>Filter by Subject</p>");
             // Final Removals
             var calendarMonthOrderChanger = jQuery('.stec-top-menu-layouts li:first-child').insertAfter('.stec-top-menu-layouts li:nth-child(2)');
-            $(window).on("load, resize", function() {
-                var viewportWidth = $(window).width();
+            jQuery(window).on("load, resize", function() {
+                var viewportWidth = jQuery(window).width();
                 if (viewportWidth < 768) {
-                        $("li[data-view='month']").removeClass("active");
-                        $("li[data-view='agenda']").addClass("active");
+                    jQuery("li[data-view='month']").removeClass("active");
+                } else {
+                    jQuery("li[data-view='month']").addClass("active");
                 }
             });  
         };
