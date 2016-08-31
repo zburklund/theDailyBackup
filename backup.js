@@ -99,7 +99,7 @@
                 if (viewportWidth < 768) {
                     jQuery("li[data-view='month']").removeClass("active");
                 } else {
-                    jQuery("li[data-view='month']").addClass("active");
+                    jQuery("li[data-view='month']").removeClass("active");
                 }
             });  
         };

@@ -520,6 +520,10 @@ i.sociallogos {
     .stec-top-dropmenu-layouts {
         display: none !important;
     }
+    div.stec-top>ul:first-of-type li:nth-child(3) {
+        margin-right: 0px;
+        display: none;
+    }
 }
 @media (max-width:1019px) {
     #mainSearchBox {
@@ -817,6 +821,7 @@ li[data-action] {
 }
 div.stec-top>ul:first-of-type li:nth-child(3) {
     margin-right: 6px;
+    display: block;
 }
 div.stec-top>(ul:first-of-type):not(.stec-top-menu-filter-calendar-dropdown) li:nth-child(2) {
     display: none;
