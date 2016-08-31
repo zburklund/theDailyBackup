@@ -21,21 +21,6 @@
         // Flip the footer and instagram feed
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
 
-        // Hold onto the details of the calendar
-        var calendarHolder = jQuery('.stec').parent();
-        // Change places for the calendar on the Calendar Page
-        var calendarFlipper = jQuery('.cb-main div.cb-contents').prepend(calendarHolder);
-        // Change places for the calendar on the Events Page
-        var calendarFlipper = jQuery('#cb-section-a div.cb-contents').prepend(calendarHolder);
-
-        var calendarViewFlipper = jQuery("li[data-view='day'], li[data-view='week']").each(function() {
-            jQuery(this).css("display", "none");
-        });
-
-        var calendarFilterIconChanger = jQuery('i.fa-calendar').replaceWith("<p>Filter by Subject</p>");
-
-        var calendarMonthOrderChanger = jQuery('.stec-top-menu-layouts li:first-child').insertAfter('.stec-top-menu-layouts li:nth-child(2)');
-
         // // Remove all placeholder images
         var placeholderRemover = jQuery("div.cb-mask:has(img[alt*='placeholder'])").each(function() {
             jQuery(this).css("display", "none");
@@ -93,6 +78,29 @@
             var fixTheTitle = jQuery('#cb-featured-image>div.cb-entry-header.cb-meta');
             var placeTheTitle = jQuery('div.cb-post-wrap div.cb-main').prepend(fixTheTitle);
             var fixTheCaption = jQuery('span.cb-caption').css({"width": "100%", "max-width": "100%", "text-align": "center"});
+        };
+        if (hreftest[3] == 'events') {
+            // Hold onto the details of the calendar
+            var calendarHolder = jQuery('.stec').parent();
+            // Change places for the calendar on the Calendar Page
+            var calendarFlipper = jQuery('.cb-main div.cb-contents').prepend(calendarHolder);
+            // Change places for the calendar on the Events Page
+            var calendarFlipper = jQuery('#cb-section-a div.cb-contents').prepend(calendarHolder);
+            // Choose not to display day and week views
+            var calendarViewFlipper = jQuery("li[data-view='day'], li[data-view='week']").each(function() {
+                jQuery(this).css("display", "none");
+            });
+            // Change the filter icon to text
+            var calendarFilterIconChanger = jQuery('i.fa-calendar').replaceWith("<p>Filter by Subject</p>");
+            // Final Removals
+            var calendarMonthOrderChanger = jQuery('.stec-top-menu-layouts li:first-child').insertAfter('.stec-top-menu-layouts li:nth-child(2)');
+            $(window).on("load, resize", function() {
+                var viewportWidth = $(window).width();
+                if (viewportWidth < 768) {
+                        $("li[data-view='month']").removeClass("active");
+                        $("li[data-view='agenda']").addClass("active");
+                }
+            });  
         };
     });
     // Watch all of the clicks that happen in the document
