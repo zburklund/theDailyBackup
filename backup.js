@@ -98,8 +98,10 @@
                 var viewportWidth = jQuery(window).width();
                 if (viewportWidth < 768) {
                     jQuery("li[data-view='month']").removeClass("active");
+                    jQuery("li[data-view='agenda']").addClass("active");
                 } else {
-                    jQuery("li[data-view='month']").removeClass("active");
+                    jQuery("li[data-view='month']").addClass("active");
+                    jQuery("li[data-view='agenda']").removeClass("active");
                 }
             });  
         };
