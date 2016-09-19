@@ -834,7 +834,7 @@ div.stec-top>ul:first-of-type li.stec-top-menu-search {
     display: none;
 }
 .stec-layout-event-inner-intro-media {
-    width: 360px !important;
+    max-width: 360px;
 }
 .stec-layout-event-inner-intro .stec-layout-event-inner-intro-external-link {
     color: #ffffff;
