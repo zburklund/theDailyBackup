@@ -845,3 +845,6 @@ div.stec-top>ul:first-of-type li.stec-top-menu-search {
 .cb-body-light .cb-sidebar-widget a {
     color: #3168a6;
 }
+div[id^="cb-recent-posts-"] article.category-events span.cb-date {
+    display: none;
+}
