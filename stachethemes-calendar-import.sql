@@ -2,9 +2,9 @@
 --OPEN PHPmyAdmin AND NAVIGATE TO THE TABLE: `wp_stec_events` THEN OPEN THE SQL QUERY BOX
 
 
---CHECK FOR ACCURACY AND THEN UPDATE EVENT DATES AND COLOR
+--CHECK FOR ACCURACY AND THEN UPDATE EVENT DATES
 UPDATE `wp_stec_events`
-SET `end_date` = `start_date`, `color`="#ed6868"
+SET `end_date` = `start_date`
 WHERE `calid` = "10"
 
 
@@ -14,7 +14,7 @@ SET `summary` = REPLACE(`summary`, "text", ""), `description` = REPLACE(`descrip
 WHERE `calid` = "10"
 
 
---FINAL TO MOVE EVENTS OVER
+--FINAL TO MOVE EVENTS OVER AND UPDATE COLOR
 UPDATE `wp_stec_events`
-SET `calid` = "3"
+SET `calid` = "3", `color`="#ed6868"
 WHERE `calid` = "10"
