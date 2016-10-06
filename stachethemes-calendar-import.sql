@@ -18,3 +18,9 @@ WHERE `calid` = "10"
 UPDATE `wp_stec_events`
 SET `calid` = "3", `color`="#ed6868"
 WHERE `calid` = "10"
+
+
+--DATE ADJUSTMENT IF NEEDED
+UPDATE `wp_stec_events`
+SET `start_date` = DATE_ADD(`start_date`, INTERVAL -4 HOUR)
+WHERE `calid` = "10"
