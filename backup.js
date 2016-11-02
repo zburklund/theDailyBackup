@@ -32,7 +32,7 @@
         if (hreftest[3] != '') {
             var logoAdjuster = jQuery('#logo>a').wrap('<h1></h1>');
         };
-        if ((hreftest[3] != '') && (hreftest[4] == '') && ((hreftest[3] != 'events') && (hreftest[3] != 'about') && (hreftest[3] != 'community-postings') && (hreftest[3] != 'community-postings-form'))) {
+        if ((hreftest[3] != '') && (hreftest[4] == '') && ((hreftest[3] != 'events') && (hreftest[3] != 'about') && (hreftest[3] != 'community-postings') && (hreftest[3] != 'community-postings-form') && (hreftest[3] != 'connect'))) {
             var mainContentButtons = jQuery('div.cb-main>div').each(function() {
                 var hrefholder = jQuery(this).find('div.cb-module-header>h2').text();
                 var cleanlink = ((((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase());
