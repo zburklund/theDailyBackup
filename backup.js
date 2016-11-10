@@ -1,6 +1,8 @@
 <script>
     // As soon as the page loads
     jQuery(document).ready(function() {
+        // Add GTM code just after the first body tag
+        var gtmCodeAdd = jQuery('body').prepend('<!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6NQD8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->');
         // Add the CWRU logo to the top right of the page
         var topMenuLogo = jQuery('#cb-top-menu>div').prepend("<div style='position:absolute;top:10px;'><a href='http://case.edu/' style='padding-left:10px;'><img style='height:32px;' src='http://dailymedia.case.edu/wp-content/uploads/2016/07/18155038/cwru-formal-logo-spotwhite-no-tag-1.svg'></a></div>");
         // Style the search bars (standard and mobile)
