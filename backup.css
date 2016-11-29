@@ -752,6 +752,24 @@ div[id^="cb-recent-posts-"] article.category-events span.cb-date {
     margin: 30px 0px;
 }
 
+/* Soliloquy Sliders */
+.soliloquy-container {
+    margin-bottom: 60px !important;
+}
+.cb-entry-content span.cb-itemprop .soliloquy-slider {
+    margin-left: 0 !important;
+}
+.soliloquy-container .soliloquy-pager, .soliloquy-container .soliloquy-caption, .soliloquy-container .soliloquy-controls-auto {
+    display: block !important;
+}
+@media (max-width:600px) {
+    .soliloquy-container .soliloquy-caption {
+        position:relative !important;
+        bottom: auto !important;
+        background: #626262 !important;
+    }
+}
+
 /* =====================
 /* ===CONTENT & MEDIA===
 /* ===================== */
