@@ -473,7 +473,10 @@ h2 {
     letter-spacing: 1px !important;
     font-size: 2em;
 }
-
+.cb-fis-tl-me-above .cb-fis .cb-fis-bg-ldd,
+.cb-fis-tl-me-below .cb-fis .cb-fis-bg-ldd {
+    opacity:1 !important;
+}
 .cb-fis h1 {
     color: #161616;
     font-size: 2.5em;
@@ -481,7 +484,6 @@ h2 {
     letter-spacing: 0px !important;
     text-transform: none !important;
 }
-
 .cb-meta-style-4 .cb-article-meta h2 a {
     text-transform: none;
 }
