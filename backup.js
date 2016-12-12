@@ -116,4 +116,7 @@
             jQuery('body').removeClass('cb-mob-op');
         }
     });
+    var urlHolder = window.location.href;
+    jQuery("li a[href='" + urlHolder + "']").addClass('current').parentsUntil('ul.cb-main-nav').slice(3).find(">a").addClass('current');
+
 </script>
