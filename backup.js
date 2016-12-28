@@ -22,13 +22,16 @@
         var socialHolder = jQuery('#cb-footer div.cb-under-footer');
         // Flip the footer and instagram feed
         var socialFlipper = jQuery('#cb-footer').prepend(socialHolder);
-
         // // Remove all placeholder images
         var placeholderRemover = jQuery("div.cb-mask:has(img[alt*='placeholder'])").each(function() {
             jQuery(this).css("display", "none");
             jQuery(this).next().css({"width": "100%", "padding-left": "0px"});
         });
-
+        // Adjust page title dynamically
+        var pagetitle = jQuery('title');
+        if (pagetitle != 'The Daily | Case Western Reserve University') {
+            //adjust the title
+        }
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
         if (hreftest[3] != '') {
