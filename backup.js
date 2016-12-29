@@ -29,8 +29,17 @@
         });
         // Adjust page title dynamically
         var pagetitle = jQuery('title');
-        if (pagetitle != 'The Daily | Case Western Reserve University') {
+        if (pagetitle[0].innerHTML != 'The Daily | Case Western Reserve University') {
             //adjust the title
+            var pagetitleholder = pagetitle[0].innerHTML;
+            if (pagetitle[0].innerHTML.search(" Archives") == -1) {
+                pagetitleholder += " The Daily";
+            }
+            pagetitleholder = pagetitleholder.replace(" Archives", "");
+            if (pagetitleholder.length < 22) {
+                pagetitleholder += " | Case Western Reserve University";
+            }
+            pagetitle[0].innerHTML = pagetitleholder;
         }
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
