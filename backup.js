@@ -41,6 +41,15 @@
             }
             pagetitle[0].innerHTML = pagetitleholder;
         }
+        // If the page is a Community Posting - add the disclaimer to the page
+        var checkTheCategory = jQuery('.cb-category').each(function() {
+            // console.log(jQuery(this).find('a').attr('href'));
+            if (jQuery(this).find('a').attr('href') == 'http://thedaily.case.edu/category/community-postings/') {
+                // append the disclaimer
+                // console.log(jQuery(this).parent());
+                // jQuery(this).parent().before('<div class="community-postings-disclaimer"><p><em>Community Postings Disclaimer</em></p></div>');
+            }
+        });
         // Search for areas to drop buttons in the main content
         var hreftest = jQuery(location).attr('href').split('/');
         if (hreftest[3] != '') {
