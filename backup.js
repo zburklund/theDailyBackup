@@ -43,11 +43,11 @@
         }
         // If the page is a Community Posting - add the disclaimer to the page
         var checkTheCategory = jQuery('.cb-category').each(function() {
-            // console.log(jQuery(this).find('a').attr('href'));
-            if (jQuery(this).find('a').attr('href') == 'http://thedaily.case.edu/category/community-postings/') {
-                // append the disclaimer
-                // console.log(jQuery(this).parent());
-                // jQuery(this).parent().before('<div class="community-postings-disclaimer"><p><em>Community Postings Disclaimer</em></p></div>');
+            if (jQuery(location).attr('href') != 'http://thedaily.case.edu/category/community-postings/') {
+                if (jQuery(this).find('a').attr('href') == 'http://thedaily.case.edu/category/community-postings/') {
+                    // append the disclaimer
+                    jQuery(this).parent().before('<div class="community-postings-disclaimer"><p><em>Items that appear in the Community Postings section are submitted by visitors. Posts are reviewed to ensure they are appropriate for our audience, but typically are not edited by University Marketing and Communications.</em></p></div>');
+                }
             }
         });
         // Search for areas to drop buttons in the main content
