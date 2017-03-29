@@ -1,0 +1,7 @@
+a.stec-layout-event-inner-button-sec-style {
+    color: #999da2 !important;
+}
+a.stec-layout-event-inner-button-sec-style:hover, a.stec-layout-event-inner-intro-external-link:hover {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
